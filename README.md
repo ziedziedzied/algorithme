@@ -1,1 +1,23 @@
 # algorithme
+ALGORITHM checkpoint VAR          
+c: CHAR;     
+len: INTEGER:=0;   
+  words: INTEGER:=0; 
+   vowels: INTEGER:=0; 
+    BEGIN   
+      WHILE (c<>".") DO  
+       Write("give a caracter");        
+        Read(c));          
+        len:=len + 1;   
+         IF (c=" ") THEN
+       words:= words + 1; 
+        END_IF 
+          IF (c in ["a","e","i","o","u","y"]) THEN  
+          vowels:=vowels + 1;  
+            END_IF
+             END_WHILE 
+              Write(len);    
+            Write(words); 
+             Write(vowels);
+
+END
